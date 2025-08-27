@@ -535,6 +535,22 @@
     background: var(--light);
     color: var(--accent);
   }
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* stack image and form vertically */
+    gap: 2rem;
+  }
+
+  .contact-form,
+  .contact-image {
+    min-width: 100%; /* take full width on mobile */
+  }
+
+  .contact-image img {
+    height: auto; /* maintain aspect ratio */
+  }
+}
   
   /* ===================
      Footer
